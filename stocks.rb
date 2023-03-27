@@ -6,8 +6,8 @@ def stock_picker(days)
     best_day_pair = ""
 
 
-   days.each_with_index do |price1, id1|
-    days.each_with_index do |price2, id2|
+   days.each_with_index do |price1, id1| p price1
+    days.each_with_index do |price2, id2| p price2
 
         profit = price2 - price1
 
