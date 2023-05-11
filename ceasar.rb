@@ -1,12 +1,9 @@
 # Split string into character array, get ascii value for each character
 # 65 - 90 for A-B
 # 97 - 122 for a-b
+class Ceasar
 
-def ceasar_cipher
-  p('Give me a message')
-  text = gets.chomp
-  p('Give me a number to work with')
-  number = gets.chomp.to_i
+def cipher(text, number)
 
   result = text.chars.map do |letter|
     if letter.match(/[a-z]/)
@@ -25,7 +22,7 @@ def ceasar_cipher
       letter
     end
   end
-  p result.join('')
+  result.join('')
 end
 
-ceasar_cipher
+end
